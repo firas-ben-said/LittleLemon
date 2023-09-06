@@ -6,7 +6,7 @@ class Menu(models.Model):
     price = models.IntegerField()
     description = models.TextField()
     def __str__(self):
-        return self.name
+        return f'{self.name} : {str(self.price)}'
     
 class Booking(models.Model):
     name = models.CharField(max_length=100)
